@@ -16,3 +16,9 @@
 | Lab 13 |  |  |
 | Lab 14 |  |  |
 | Homework | :cyclone: |  |
+
+### Legend:
+* :white_check_mark: - OK
+* :cyclone: - in process
+* :warning: - problem
+* :sos: - need help
