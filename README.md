@@ -1,6 +1,6 @@
 # Лабораторные работы по С++
 | List of labs | Stage | Delivery |
-| ---------- | :------: | :-----: |
+| :----------: | :------: | :-----: |
 | Lab 1 | :white_check_mark: |  |
 | Lab 2 | :cyclone: |  |
 | Lab 3 | :cyclone: |  |
