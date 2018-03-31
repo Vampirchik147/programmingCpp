@@ -1,9 +1,9 @@
 # Лабораторные работы по С++
 | Номер лабы | Статус | Сдача |
 | ---------- | ------ | ----- |
-| Lab 1 | :white-check-mark: | |
-| Lab 2 | | |
-| Lab 3 | | |
+| Lab 1 |  :white_check_mark: | |
+| Lab 2 |  :cyclone:| |
+| Lab 3 | :cyclone: | |
 | Lab 4 | | |
 | Lab 5 | | |
 | Lab 6 | | |
