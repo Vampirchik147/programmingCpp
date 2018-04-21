@@ -3,7 +3,7 @@
 | :----------: | :------: | :-----: |
 | Lab 1 | :white_check_mark: | :white_check_mark: |
 | Lab 2 | :white_check_mark: | :white_check_mark: |
-| Lab 3 | :cyclone: |  |
+| Lab 3 | :white_check_mark: |  |
 | Lab 4 |  |  |
 | Lab 5 |  |  |
 | Lab 6 |  |  |
