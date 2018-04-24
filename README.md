@@ -1,4 +1,4 @@
-# Лабораторные работы по С++
+# Лабораторные работы по С++ :octocat: :computer:
 | List of labs | Stage | Delivery |
 | :----------: | :------: | :-----: |
 | Lab 1 | :white_check_mark: | :white_check_mark: |
