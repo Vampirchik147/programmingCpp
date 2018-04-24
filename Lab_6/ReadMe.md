@@ -1,4 +1,4 @@
-# Лабораторная работа № 6 :octocat: 
+# Лабораторная работа № 6 :octocat: :computer: 
 Добавить методы к классу `Complex`:
 - [x] `Complex(const Complex&)`
 - [x] `operator*(const Complex&)`
