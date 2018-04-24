@@ -6,8 +6,8 @@
 | Lab 3 | :white_check_mark: |  |
 | Lab 4 |  |  |
 | Lab 5 |  |  |
-| Lab 6 |  |  |
-| Lab 7 |  |  |
+| Lab 6 | :white_check_mark: |  |
+| Lab 7 | :white_check_mark: |  |
 | Lab 8 |  |  |
 | Lab 9 |  |  |
 | Lab 10 |  |  |
