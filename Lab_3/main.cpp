@@ -103,10 +103,10 @@ public:
 
 int main() {
 
-    string A = "/Users/levin/Sveta/ИУ10-41/C++/Lab_3/A.txt";
-    string B = "/Users/levin/Sveta/ИУ10-41/C++/Lab_3/B.txt";
-    string C = "/Users/levin/Sveta/ИУ10-41/C++/Lab_3/C.txt";
-    string D = "/Users/levin/Sveta/ИУ10-41/C++/Lab_3/D.txt";
+    string A = "A.txt";
+    string B = "B.txt";
+    string C = "C.txt";
+    string D = "D.txt";
 
     Matrix<int> matrix1;
     Matrix<int> matrix2;
