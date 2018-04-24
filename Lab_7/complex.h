@@ -2,8 +2,8 @@
 // Created by levin on 24.04.18.
 //
 
-#ifndef LAB_6_COMPLEX_H
-#define LAB_6_COMPLEX_H
+#ifndef LAB_7_COMPLEX_H
+#define LAB_7_COMPLEX_H
 
 
 #include <iostream>
@@ -34,4 +34,4 @@ public:
     bool operator==(const Complex&);
 };
 
-#endif //LAB_6_COMPLEX_H
+#endif //LAB_7_COMPLEX_H
