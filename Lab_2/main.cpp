@@ -3,11 +3,8 @@
 
 using namespace std;
 
-//Работаем через структуру//
 
-// 5 5 6 5 5 5 5 6 5 5 5 5 5 6 11 5 5
 
-//complex Add( const& c1, const& c2);
 
 class Complex{
 
