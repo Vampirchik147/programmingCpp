@@ -4,7 +4,7 @@
 | Lab 1 | :white_check_mark: | :white_check_mark: |
 | Lab 2 | :white_check_mark: | :white_check_mark: |
 | Lab 3 | :white_check_mark: |  |
-| Lab 4 |  |  |
+| Lab 4 | :white_check_mark: |  |
 | Lab 5 | :white_check_mark: |  |
 | Lab 6 | :white_check_mark: |  |
 | Lab 7 | :white_check_mark: |  |
