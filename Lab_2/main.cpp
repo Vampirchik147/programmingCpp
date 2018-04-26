@@ -3,140 +3,43 @@
 
 using namespace std;
 
-
-
-
 class Complex{
-
+private:
     double Im, Re;
-    string sign_Im, sign_Re;
-
 public:
-    Complex(){};
+    Complex():Re(0.0),Im(0.0){};
+    Complex(double re, double im): Re(re), Im(im){}
 
-    Complex(double Im, double Re){
-        this->Im = Im;
-        this->Re = Re;
-
-        if (Im >= 0){
-            this->sign_Im = "";
-        }
-        else{
-            this->sign_Im = "-";
-        }
-
-        if (Re >= 0){
-            this->sign_Re = "+";
-        }
-        else{
-            this->sign_Re = "-";
+    void print(ostream& os){
+        if(Im < 0){
+            os << Re << Im << "i" << endl;
+        }else{
+            os << Re <<"+"<< Im << "i" << endl;
         }
     }
 
-    ostream& print(ostream& os){
-        os << sign_Im << abs(this->Im) << sign_Re << abs(this->Re) << "i" << endl;
+
+    Complex add(const Complex& other){
+        return Complex(Re+other.Re, Im+other.Im);
     }
-
-
-    void Add(Complex obj){
-        this->Im += obj.Im;
-        this->Re += obj.Re;
-
-        if(Im >= 0){
-            this->sign_Im = "";
-        }
-        else{
-            this->sign_Im = "-";
-        }
-
-        if(Re >= 0){
-            this->sign_Re = "";
-        }
-        else{
-            this->sign_Re = "-";
-        }
-
-        Complex complex(Im, Re);
-        complex.print(cout);
+    Complex sub(const Complex& other){
+        return Complex(Re-other.Re, Im-other.Im);
     }
-
-    void Sub(Complex obj){
-        this->Im -= obj.Im;
-        this->Re -= obj.Re;
-
-        if(Im >= 0){
-            this->sign_Im = "";
-        }
-        else{
-            this->sign_Im = "-";
-        }
-
-        if(Re >= 0){
-            this->sign_Re = "";
-        }
-        else{
-            this->sign_Re = "-";
-        }
-
-        Complex complex(Im, Re);
-        complex.print(cout);
+    Complex mul(int number){
+        return Complex(Re*number, Im*number);
     }
-
-    void Muv(int chislo){
-        this->Im *= chislo;
-        this->Re *= chislo;
-
-        if(Im >= 0){
-            this->sign_Im = "";
-        }
-        else{
-            this->sign_Im = "-";
-        }
-
-        if(Re >= 0){
-            this->sign_Re = "";
-        }
-        else{
-            this->sign_Re = "-";
-        }
-
-        Complex complex(Im, Re);
-        complex.print(cout);
-    }
-
-    void Div(int chislo){
-
-        try {
-                if(chislo == 0){
-                    throw 1;
-                }
-
-            this->Im /= chislo;
-            this->Re /= chislo;
-        }catch (int chislo){
+    Complex div(int number){
+        try{
+            if(number == 0){
+                throw 1;
+            }
+            Re = Re/number;
+            Im = Im/number;
+        }catch (int number){
             cout << "Division by zero" << endl;
 
-            return;
         }
-
-
-
-        if(Im >= 0){
-            this->sign_Im = "";
-        }
-        else{
-            this->sign_Im = "-";
-        }
-
-        if(Re >= 0){
-            this->sign_Re = "";
-        }
-        else{
-            this->sign_Re = "-";
-        }
-
-        Complex complex(Im, Re);
-        complex.print(cout);
+        return Complex(Re, Im);
     }
 
 };
@@ -149,17 +52,14 @@ int main() {
     cout << "Enter two complex numbers: " << endl;
     cout << "\n";
 
-    cout << "First number Im: ";
-    cin >> Im_1;
-    cout << "First number Re: ";
-    cin >> Re_1;
-    cout << "Second number Im: ";
-    cin >> Im_2;
-    cout << "Second number Re: ";
-    cin >> Re_2;
+    cout << "First number Re, Im: ";
+    cin >> Re_1 >> Im_1;
 
-    Complex complex_1(Im_1, Re_1);
-    Complex complex_2(Im_2, Re_2);
+    cout << "Second number Re, Im: ";
+    cin >> Re_2 >> Im_2;
+
+    Complex complex_1(Re_1, Im_1);
+    Complex complex_2(Re_2, Im_2);
 
     Complex complex;
 
@@ -186,11 +86,11 @@ int main() {
         switch(choose){
             case 1:
                 cout << "Add complex numbers: ";
-                complex_1.Add(complex_2);
+                complex_1.add(complex_2).print(cout);
                 break;
             case 2:
                 cout << "Diff complex numbers: ";
-                complex_1.Sub(complex_2);
+                complex_1.sub(complex_2).print(cout);
                 break;
             case 3:
 
@@ -198,10 +98,10 @@ int main() {
                 cin >> chislo;
                 cout << "\n";
                 cout << "Mul first complex number: ";
-                complex_1.Muv(chislo);
+                complex_1.mul(chislo).print(cout);
 
                 cout << "Mul second complex number: ";
-                complex_2.Muv(chislo);
+                complex_2.mul(chislo).print(cout);
                 break;
             case 4:
                 cout << "Enter chislo: ";
@@ -210,10 +110,10 @@ int main() {
                 cout << "\n";
 
                 cout << "Div first complex number: ";
-                complex_1.Div(chislo);
+                complex_1.div(chislo).print(cout);
 
                 cout << "Div second complex number: ";
-                complex_2.Div(chislo);
+                complex_2.div(chislo).print(cout);
                 break;
             default:
                 cout<<"Такого метода нет";
@@ -224,10 +124,5 @@ int main() {
         cin >> answer;
         cout << "\n";
     }
-
-
-
-
-
     return 0;
 }
